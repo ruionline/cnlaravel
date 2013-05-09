@@ -87,17 +87,19 @@ $paths['public'] = 'public';
                ((((~~              / /'              _.'~bb.--~
                                   ((((          __.-~bb.-~
                                               .'  b .~~
-                                              :bb ,' 
+                                              :bb ,'
                                               ~~~~
 */
 
 // --------------------------------------------------------------
 // Change to the current working directory.
+// 设定当前目录为更改当前工作目录。
 // --------------------------------------------------------------
 chdir(__DIR__);
 
 // --------------------------------------------------------------
 // Define the directory separator for the environment.
+// 对环境定义目录分隔
 // --------------------------------------------------------------
 if ( ! defined('DS'))
 {
@@ -122,11 +124,11 @@ foreach ($paths as $name => $path)
 
 /**
  * A global path helper function.
- * 
+ *全局路径获取
  * <code>
  *     $storage = path('storage');
  * </code>
- * 
+ *
  * @param  string  $path
  * @return string
  */
@@ -137,7 +139,7 @@ function path($path)
 
 /**
  * A global path setter function.
- * 
+ * 全局路径设置
  * @param  string  $path
  * @param  string  $value
  * @return void
